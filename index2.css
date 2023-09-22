@@ -1,0 +1,42 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'poppins','sans-serif';
+}
+.links{
+    display: flex;
+    
+    margin: 5px;
+}
+.navigationlink{
+
+    height:100vh;
+    position: fixed;
+    background-color: red;
+    width:200px;
+    left:200px;
+
+}
+nav{
+    background-color: red;
+}
+aside{
+    background-color: red;
+}
+.navigationbar ul {
+    height:100vh;
+    position: fixed;
+    background-color: red;
+    width:200px;
+    left:200px;
+   
+    top:0;
+}
+.links
+i {
+    margin: 5px;
+}
+.container{
+
+    background-color: red;
+}
