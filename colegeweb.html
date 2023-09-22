@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href='https://d33wubrfki0l68.cloudfront.net/css/337dd403d9768f89d635c0c94a48a2892d02f147/style.6d1a1ff4.css' rel='stylesheet'/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Wahcollege</title>
+</head>
+<body>
+    <header >
+        <div class="info">
+
+            <ul class="sociallinks">
+              <li class="social-item"> <i class="fa-brands fa-facebook"></i></li> 
+             <li class="social-item"> <i class="fa-brands fa-twitter"></i></li>  
+               <li class="social-item"> <i class="fa-brands  fa-instagram"></i></li>
+                </ul>
+                
+                <div class="contactinfo2">
+            <a href="">huzaifaacf@gmail.com</a>
+            <a href="">+92 3205679889</a>
+        </div>
+            <div class="btns">
+                <button class="btn-normal"> Login/Signup</button>
+                <button class="btn-normal">Download App</button>
+                </div>
+                </div>
+   
+<!------
+    <section  class="containermenu">
+   
+        <nav>
+           
+           
+            <a href=""><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAAAgCAMAAACioYPHAAAB/lBMVEUAAAD///8tMJItMJItMJItMJItMJItMJItMJItMJItMJIKCyktMJItMJItMJItMJItMJItMJItMJItMJItMJIKCyktMJItMJItMJItMJItMJItMJItMJItMJItMJItMJIKCyktMJItMJItMJItMJItMJItMJItMJItMJItMJItMJItMJIKCyktMJItMJItMJItMJItMJItMJIKCyktMJItMJItMJItMJItMJItMJItMJItMJItMJItMJIKCyktMJItMJItMJItMJItMJItMJItMJItMJItMJItMJItMJItMJIKCyktMJItMJItMJItMJItMJIKCyktMJItMJItMJItMJItMJItMJItMJItMJItMJIKCyktMJItMJItMJItMJItMJItMJItMJItMJItMJItMJItMJIKCyktMJItMJItMJItMJItMJItMJItMJItMJItMJItMJItMJItMJItMJIKCyktMJItMJItMJItMJItMJItMJItMJItMJItMJItMJItMJIKCyktMJItMJItMJItMJItMJItMJItMJItMJIKCyktMJItMJItMJItMJItMJItMJItMJItMJItMJItMJItMJItMJItMJIKCyktMJItMJItMJItMJItMJItMJItMJItMJItMJItMJItMJItMJItMJItMJItMJIKCyktMJLNW06JAAAAqHRSTlMAAAECAwgJCw0PEBERFBYXGRwdHiAiJSYnKCksLzAxMjMzNDU2Nzg7PkBBQkRFRkxQUlRVVlddXl9gYWNkZWZnaGlqbW9wcXJzdXZ3e4KEhoeIiIuOkJGSk5SVmZqcnZ+goqSlpqeoqqusra+xs7S1tre4ubq7u73AwcLGx8jJysvMzM7P0NTW2Nrd3d7f4OHi5Obn6Onq7O7u7/Dx8vP09fb4+fv8/f7ZWCsyAAADRUlEQVRYw83Y6XsLURQH4ENtlVqKKUqJtZZRIXY1akmVsUXtodIise8hqCVVVBBa1FRa1TbV8/svfZjJzGR7kjT6TO6nmXvvM/POPecuCRERkaPnxYUd5WQus2ubXvc5iIhonJVF1TgAAG2uqZpuWkM7AKCIgPfrLncD0aOTiWjK8X6gq3nXvSIBzj9UdxJXx9OEdTdG8LGKlnzGyLU1JVTiw+m9h+dbD1Tj2//ylKN04Sv0butF64KyDefaBuJRth743vv4w18AQzfXtgC4VHMrBuBvx4Omd9YDvedu403d+qXl1a67Q8CDH/jxCBi8vW/lrBWOPe244/VaC0S8fLpeO+/AdwDA9/rK3Te+6i0WA39ur2s4cSn4DUDsytkYgNgZ3zCAzicXj9Xv3NKN5DmfvcgcttN/KohoFzM3tQzog/anecMMrT6SD9DDLBHZmTk0Ok6YWcgAJKKZHWh0uVxH8GW6UZkMFGSFmf1yYUCBjZI7kIKoIqI5eEsZgZ74Y8NiRmAOIR4zYMD0YCkjMHsZK6CbmQN2IpIUZrYXBhTyzsGsQIGZPdobFOaARhIDzH67DpSYmeWUNiK7h5n9Ylqg4GZm2aYCNabIHMgP6GZWbFq9pL7Cw6yF3Z4OaGojWQupnAYoaomtFAYMMbvj9TY1C/VJo49nAtDU5tTvxBSgoBgpWQgwbE6xMLOsIpzq6Nj0HJQMoNEWVr/OwxxImCRERG61pxAoEKikBcpEREo84IlAo82pjiNRmDkFGNJ6UtYc/B2NRvvyDLFkPDkFaLTJbI5iElBfErIC1ZLfJBkt0JSD+l2BkyTDMpMTUA9xunUwntyinoNO9TGBUSzUfsG8UOcMtCnax0mhVKCbWRGJREWt9jOHbCSEmd0Fb3U5A03LTOpWJyTE39RVKPiwkDtQz8JQmr1YUi89SV2l/E8zycetPIAkyMwcktIeFux+ZkXSuzr9zOwR892LLTnyDwaDz+75zu6vnpgAnLSq/vy1h63Pg4Mokh9N6L+8RAcu9xnHf4uBm9csq1ywuGZ749NhYFADxoBY8MTWdVVz5y5avbEI/pshIqKyg1GgKxKJdAK/GkqNhmIBElV0a0HtqTBXWwr8B4x0F6ZQ3I7nAAAAAElFTkSuQmCC"></a>
+            <i class="fa fa-bars"></i>
+           
+            <div class="navlinks">
+               
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>course</li>
+                    <li>Instructor</li>
+                    <li>contact</li>
+                </ul>
+               
+            </div>
+                <div class="search">
+                    <form action="">
+                        <input type="text" placeholder="search courses" class="a">
+                        </form>
+                   </div>
+               
+              
+        </nav>
+       
+    </section>
+
+    ---->
+<div class="collapsablemenu">
+    <div class="menu">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAAAgCAMAAACioYPHAAAB/lBMVEUAAAD///8tMJItMJItMJItMJItMJItMJItMJItMJItMJIKCyktMJItMJItMJItMJItMJItMJItMJItMJItMJIKCyktMJItMJItMJItMJItMJItMJItMJItMJItMJItMJIKCyktMJItMJItMJItMJItMJItMJItMJItMJItMJItMJItMJIKCyktMJItMJItMJItMJItMJItMJIKCyktMJItMJItMJItMJItMJItMJItMJItMJItMJItMJIKCyktMJItMJItMJItMJItMJItMJItMJItMJItMJItMJItMJItMJIKCyktMJItMJItMJItMJItMJIKCyktMJItMJItMJItMJItMJItMJItMJItMJItMJIKCyktMJItMJItMJItMJItMJItMJItMJItMJItMJItMJItMJIKCyktMJItMJItMJItMJItMJItMJItMJItMJItMJItMJItMJItMJItMJIKCyktMJItMJItMJItMJItMJItMJItMJItMJItMJItMJItMJIKCyktMJItMJItMJItMJItMJItMJItMJItMJIKCyktMJItMJItMJItMJItMJItMJItMJItMJItMJItMJItMJItMJItMJIKCyktMJItMJItMJItMJItMJItMJItMJItMJItMJItMJItMJItMJItMJItMJItMJIKCyktMJLNW06JAAAAqHRSTlMAAAECAwgJCw0PEBERFBYXGRwdHiAiJSYnKCksLzAxMjMzNDU2Nzg7PkBBQkRFRkxQUlRVVlddXl9gYWNkZWZnaGlqbW9wcXJzdXZ3e4KEhoeIiIuOkJGSk5SVmZqcnZ+goqSlpqeoqqusra+xs7S1tre4ubq7u73AwcLGx8jJysvMzM7P0NTW2Nrd3d7f4OHi5Obn6Onq7O7u7/Dx8vP09fb4+fv8/f7ZWCsyAAADRUlEQVRYw83Y6XsLURQH4ENtlVqKKUqJtZZRIXY1akmVsUXtodIise8hqCVVVBBa1FRa1TbV8/svfZjJzGR7kjT6TO6nmXvvM/POPecuCRERkaPnxYUd5WQus2ubXvc5iIhonJVF1TgAAG2uqZpuWkM7AKCIgPfrLncD0aOTiWjK8X6gq3nXvSIBzj9UdxJXx9OEdTdG8LGKlnzGyLU1JVTiw+m9h+dbD1Tj2//ylKN04Sv0butF64KyDefaBuJRth743vv4w18AQzfXtgC4VHMrBuBvx4Omd9YDvedu403d+qXl1a67Q8CDH/jxCBi8vW/lrBWOPe244/VaC0S8fLpeO+/AdwDA9/rK3Te+6i0WA39ur2s4cSn4DUDsytkYgNgZ3zCAzicXj9Xv3NKN5DmfvcgcttN/KohoFzM3tQzog/anecMMrT6SD9DDLBHZmTk0Ok6YWcgAJKKZHWh0uVxH8GW6UZkMFGSFmf1yYUCBjZI7kIKoIqI5eEsZgZ74Y8NiRmAOIR4zYMD0YCkjMHsZK6CbmQN2IpIUZrYXBhTyzsGsQIGZPdobFOaARhIDzH67DpSYmeWUNiK7h5n9Ylqg4GZm2aYCNabIHMgP6GZWbFq9pL7Cw6yF3Z4OaGojWQupnAYoaomtFAYMMbvj9TY1C/VJo49nAtDU5tTvxBSgoBgpWQgwbE6xMLOsIpzq6Nj0HJQMoNEWVr/OwxxImCRERG61pxAoEKikBcpEREo84IlAo82pjiNRmDkFGNJ6UtYc/B2NRvvyDLFkPDkFaLTJbI5iElBfErIC1ZLfJBkt0JSD+l2BkyTDMpMTUA9xunUwntyinoNO9TGBUSzUfsG8UOcMtCnax0mhVKCbWRGJREWt9jOHbCSEmd0Fb3U5A03LTOpWJyTE39RVKPiwkDtQz8JQmr1YUi89SV2l/E8zycetPIAkyMwcktIeFux+ZkXSuzr9zOwR892LLTnyDwaDz+75zu6vnpgAnLSq/vy1h63Pg4Mokh9N6L+8RAcu9xnHf4uBm9csq1ywuGZ749NhYFADxoBY8MTWdVVz5y5avbEI/pshIqKyg1GgKxKJdAK/GkqNhmIBElV0a0HtqTBXWwr8B4x0F6ZQ3I7nAAAAAElFTkSuQmCC">
+        <button
+        class="btn collapsable__toggler fa-bars fa-lg fas"></button>
+        <nav class="collapsablemain-nav">
+          
+            <ul class="mainnavlist">
+                <li class="navitem"><a href=" ">Home</a></li>
+                <li class="navitem"><a href=" ">About us</a></li>
+                <li class="navitem"><a href=" ">courses</a></li>
+                <li class="navitem"><a href=" ">Instructors</a></li>
+                <li class="navitem"><a href=" ">Contact</a></li>
+            </ul>
+            <form action="" class="formsearch">
+                <input type="text" placeholder="search courses">
+                <button class="btn fa-search fas form-search_sub"></button>
+            </form>
+            <div class="main-header-action">
+                <button class="btn-rounded">Login/signup</button>
+                <button class="btn--rounded">Download App</button>
+            </div>
+
+        </nav>
+    </div>
+</div>
+
+</header>
+<style>
+    .info{
+        height:20px;
+    }
+    .collapsablemain-nav{
+        display: flex;
+        flex-grow: 1;
+        justify-content: space-between;
+        padding-left: 1em;
+    }
+    .btn-normal:hover{
+        background-color: lightgrey;
+    }
+    .fa-search{
+        background-color: #2D3092;
+        border-radius: 32px;
+        padding:10px 20px;
+        color:white;
+        
+       
+
+    }
+   
+    .formsearch input{
+        padding: 10px 50px;
+        border-radius: 32px;
+        margin-top: 10px;
+        text-align: left;
+    }
+   
+    .mainnavlist li{
+        color: black;
+        font-weight: bold;
+     padding-top: 10px;
+     margin: 4px;
+ 
+     
+    }
+    @media(max-width:700px){
+        .fa-bars{
+            display:block;
+        }
+    }
+    .mainnavlist  ::after{
+        content: '';
+        width:0%;
+        background-color: #2D30AD;
+        display: block;
+   
+        height:2px;
+        transition: 0.2s;
+    }
+    .mainnavlist li a:hover{
+        color: #2D30AD;
+    }
+   .mainnavlist:hover:after{
+        width:100%;
+    }
+    .menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+   
+        width: 90%;
+    }
+   .info{
+    display: flex;
+    justify-content: space-between;
+   }
+    
+    .sociallinks{
+        margin: 0px;
+        display: flex;
+    }
+    
+    .social-item{
+        background-color: #2D3092;
+    }
+    
+    .menu{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+    }
+    .menu img {
+        width:150px;
+    }
+ .collapsablemenu{
+    box-sizing: border-box;
+    height:60px;
+ }
+   
+    .mainnavlist li {
+
+       
+        display:inline-block;
+        order: -1;
+        align-items: center;
+
+    }
+   
+    .main-header-action{
+        display: none;
+    }
+    .collapsablemenu{
+background-color: white;
+    }
+</style>
+    <!-----
+
+    <div class="maincontainer">
+        <div class="collapsable">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAAAgCAMAAACioYPHAAAB/lBMVEUAAAD///8tMJItMJItMJItMJItMJItMJItMJItMJItMJIKCyktMJItMJItMJItMJItMJItMJItMJItMJItMJIKCyktMJItMJItMJItMJItMJItMJItMJItMJItMJItMJIKCyktMJItMJItMJItMJItMJItMJItMJItMJItMJItMJItMJIKCyktMJItMJItMJItMJItMJItMJIKCyktMJItMJItMJItMJItMJItMJItMJItMJItMJItMJIKCyktMJItMJItMJItMJItMJItMJItMJItMJItMJItMJItMJItMJIKCyktMJItMJItMJItMJItMJIKCyktMJItMJItMJItMJItMJItMJItMJItMJItMJIKCyktMJItMJItMJItMJItMJItMJItMJItMJItMJItMJItMJIKCyktMJItMJItMJItMJItMJItMJItMJItMJItMJItMJItMJItMJItMJIKCyktMJItMJItMJItMJItMJItMJItMJItMJItMJItMJItMJIKCyktMJItMJItMJItMJItMJItMJItMJItMJIKCyktMJItMJItMJItMJItMJItMJItMJItMJItMJItMJItMJItMJItMJIKCyktMJItMJItMJItMJItMJItMJItMJItMJItMJItMJItMJItMJItMJItMJItMJIKCyktMJLNW06JAAAAqHRSTlMAAAECAwgJCw0PEBERFBYXGRwdHiAiJSYnKCksLzAxMjMzNDU2Nzg7PkBBQkRFRkxQUlRVVlddXl9gYWNkZWZnaGlqbW9wcXJzdXZ3e4KEhoeIiIuOkJGSk5SVmZqcnZ+goqSlpqeoqqusra+xs7S1tre4ubq7u73AwcLGx8jJysvMzM7P0NTW2Nrd3d7f4OHi5Obn6Onq7O7u7/Dx8vP09fb4+fv8/f7ZWCsyAAADRUlEQVRYw83Y6XsLURQH4ENtlVqKKUqJtZZRIXY1akmVsUXtodIise8hqCVVVBBa1FRa1TbV8/svfZjJzGR7kjT6TO6nmXvvM/POPecuCRERkaPnxYUd5WQus2ubXvc5iIhonJVF1TgAAG2uqZpuWkM7AKCIgPfrLncD0aOTiWjK8X6gq3nXvSIBzj9UdxJXx9OEdTdG8LGKlnzGyLU1JVTiw+m9h+dbD1Tj2//ylKN04Sv0butF64KyDefaBuJRth743vv4w18AQzfXtgC4VHMrBuBvx4Omd9YDvedu403d+qXl1a67Q8CDH/jxCBi8vW/lrBWOPe244/VaC0S8fLpeO+/AdwDA9/rK3Te+6i0WA39ur2s4cSn4DUDsytkYgNgZ3zCAzicXj9Xv3NKN5DmfvcgcttN/KohoFzM3tQzog/anecMMrT6SD9DDLBHZmTk0Ok6YWcgAJKKZHWh0uVxH8GW6UZkMFGSFmf1yYUCBjZI7kIKoIqI5eEsZgZ74Y8NiRmAOIR4zYMD0YCkjMHsZK6CbmQN2IpIUZrYXBhTyzsGsQIGZPdobFOaARhIDzH67DpSYmeWUNiK7h5n9Ylqg4GZm2aYCNabIHMgP6GZWbFq9pL7Cw6yF3Z4OaGojWQupnAYoaomtFAYMMbvj9TY1C/VJo49nAtDU5tTvxBSgoBgpWQgwbE6xMLOsIpzq6Nj0HJQMoNEWVr/OwxxImCRERG61pxAoEKikBcpEREo84IlAo82pjiNRmDkFGNJ6UtYc/B2NRvvyDLFkPDkFaLTJbI5iElBfErIC1ZLfJBkt0JSD+l2BkyTDMpMTUA9xunUwntyinoNO9TGBUSzUfsG8UOcMtCnax0mhVKCbWRGJREWt9jOHbCSEmd0Fb3U5A03LTOpWJyTE39RVKPiwkDtQz8JQmr1YUi89SV2l/E8zycetPIAkyMwcktIeFux+ZkXSuzr9zOwR892LLTnyDwaDz+75zu6vnpgAnLSq/vy1h63Pg4Mokh9N6L+8RAcu9xnHf4uBm9csq1ywuGZ749NhYFADxoBY8MTWdVVz5y5avbEI/pshIqKyg1GgKxKJdAK/GkqNhmIBElV0a0HtqTBXWwr8B4x0F6ZQ3I7nAAAAAElFTkSuQmCC">
+            <i class="fa fa-bars"></i>
+            <nav class="fav">
+                <form action="" >
+                    <input type="text" placeholder="search">
+                    
+                </form>
+                <ul class="mainnavlist">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>course</li>
+                    <li>Instructor</li>
+                    <li>contact</li>
+                    
+                </ul>
+                <div class="main-header__actions"> <button
+                    class="btn btn--normal btn--rounded">Login/Signup</button> <button
+                    class="btn btn--normal btn--rounded">Download App</button> </div>
+            </nav>
+        </div>
+    </div>
+    --->
+    <main>
+        <section class="first">
+
+
+<div class="content">
+    <h1>The Wah hope college|Dare to Learn</h1>
+    <h2>The New Way to Learn Properly with us</h2>
+</div>
+
+        </section>
+     
+       
+        
+
+<section class="third">
+    <h4>Most popular course of the week</h4>
+    <h1>Our Popular Course</h1>
+    <div class="row">
+        <div class="card " data-aos="fade-up"  data-aos="fade-up" data-aos-delay="300">
+            <div class="contentcard">
+                <h3 class="titles">ICS</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            </div>
+            <div class="card" data-aos="fade-up" data-aos-delay="300">
+                <div class="contentcard">
+                    <h3 class="titles">ICS</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                </div>
+                 <div class="card" data-aos="fade-up" data-aos-delay="300">
+            <div class="contentcard">
+                <h3 class="titles">ICS</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            </div>
+            <div class="card">
+                <div class="contentcard" data-aos="fade-up" data-aos-delay="300">
+                    <h3 class="titles">ICS</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                </div>
+          
+                </div>
+                <div class="containerbtn">
+                <button class="explorebtn">Explore More</button>
+            </div>
+    </section>
+    <div class="fourthsec">
+        <h4>More About our Family</h4>
+        <h1>Our Best Teachers</h1>
+       
+
+        <div class="rowsecond">
+<div class="cardtwo" data-aos="zoom-in">
+   
+        <img src="https://d33wubrfki0l68.cloudfront.net/618a9e14de172cc8de16dfab4ca1b626cd68b91e/89d8d/teacher.ace885af.webp">
+       
+        <div class="contentp">
+            <h3 class="titleteacher">Johny smith</h3>
+            <h5> Faculty</h5>
+        </div>
+            </div>
+            <div class="cardtwo" data-aos="zoom-in" data-aos-delay="100"> 
+               
+                    <img src="https://d33wubrfki0l68.cloudfront.net/618a9e14de172cc8de16dfab4ca1b626cd68b91e/89d8d/teacher.ace885af.webp">
+                   
+                
+                        <h3 class="titleteacher">Johny smith</h3>
+                        <h5> Faculty</h5>
+                      
+                        </div>
+                        <div class="cardtwo" data-aos="zoom-in" data-aos-delay="200">
+                          
+                                <img src="https://d33wubrfki0l68.cloudfront.net/618a9e14de172cc8de16dfab4ca1b626cd68b91e/89d8d/teacher.ace885af.webp">
+                              
+                             
+                                    <h3 class="titleteacher">Johny smith</h3>
+                                    <h5> Faculty</h5>
+                                    
+                                    </div>
+                                    <div class="cardtwo" data-aos="zoom-in" data-aos-delay="300">  
+                                      
+                                            <img src="https://d33wubrfki0l68.cloudfront.net/618a9e14de172cc8de16dfab4ca1b626cd68b91e/89d8d/teacher.ace885af.webp">
+                                         
+                                            
+                                                <h3 class="titleteacher">Johny smith</h3>
+                                                <h5> Faculty</h5>
+                                               
+                                                </div>
+                                                </div>
+                                                <button class="viewbtn">View More</button>
+                                            </div>
+                                       
+                                             
+                                           
+                                            <section class="fifthsec">
+
+                                                <h3>Our latest news from blog</h3>
+                                                <h1>Latest news from Blog</h1>
+                                                <div class="cardotherrow">
+                                                    <div class="cardg" data-aos="fade-right">
+                                                        <img src="https://d33wubrfki0l68.cloudfront.net/1dc38dda678272498423d094065f258cd8fa26e6/b2cd1/news.cabe12e9.webp" class="myimage">
+                                                        <div class="contentcarder">
+                                                            <h2> Registration is open now</h2>
+                                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio impedit<br> repellendus quibusdam laboriosam aliquam quaerat, reiciendis saepe itaque<br> dolorem molestias.</p>
+                                                            </div>
+                                                            <button class="readmore">Read more</button>
+                                                            </div>
+                                                            <div class="cardg" data-aos="fade-left">
+                                                                <img src="https://d33wubrfki0l68.cloudfront.net/fd80a55ed1776fe95d5f636cee1f92805a8a0389/07720/news2.4e563855.webp" class="myimage">
+                                                                <div class="contentcarder">
+                                                                    <h2> Admissions open for BS/IT</h2>
+                                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio impedit<br> repellendus quibusdam laboriosam aliquam quaerat, reiciendis saepe itaque<br> dolorem molestias.</p>
+                                                                    </div>
+                                                                    <button class="readmore">Read more</button>
+                                                                    </div>
+                                                            </div>
+                                                            </section>
+</main>
+                                                            <footer class="footer">
+                                                                <div class="contentfooter">
+                                                                    <div class="leftcontent">
+                                                                   <h2>Stay Updated</h2>
+                                                                   <div class="mailform">
+                                                                   <input type="text" class="input" placeholder="Your Email... ">  
+                                                                   <button class="footerbtn">Send</button>   
+                                                                </div>
+                                                                </div>
+                                                                <div class="rightcontent">
+                                                                    <h2> Lets Get Social</h2>
+                                                                    <div class="links">
+                                                                        <a href=""i id="one" class="fa-brands fa-facebook"></a>
+                                                                        <a href=" " id="two"
+                                                                 class="fa-brands fa-twitter"></a>
+                                                                        <a href="" id="three" class="fa-brands fa-instagram"></a>
+                                                                        </div>
+                                                                    </div>
+                                                                
+                                                                
+                                                                
+                                                               
+                                                                </div>
+                                                            </footer>
+    <style>
+        .footerbtn{
+            background-color:#2D3092 ;
+            padding:12px 17px;
+    
+            border-radius: none;
+          margin-left: -20px;
+            
+            border:none;
+            color:white;
+        }
+        .collapsable{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-grow: 1;
+        }
+        .third{
+            height: 500px;
+        }
+        .footer{
+            margin: auto;
+            width: 100%;
+        }
+        @media(max-width:700px){
+            .contentfooter{
+                flex-direction:column;
+                
+            }
+            .first {
+                font-size: 10px;
+            }
+           
+        }
+        .contactinfo2 a{
+            color:#64676C;
+        }
+        .header button:hover{
+            background-color: gray;
+        }
+       .mainnavlist{
+        text-align: left;
+       }
+        #one{
+            background-color: #3B5998;
+            padding: 10px 10px;
+            border-radius: 8px;
+            text-decoration: none;
+        }
+        #two{
+            text-decoration: none;
+            border-radius: 8px;
+            background-color: #007BFF;
+            padding: 10px 10px;
+        }
+        @media(max-width:700px){
+            .row{
+            display: grid;
+            grid-template-columns: repeat(2,2fr);
+            
+            }
+          
+        }
+        .navlinks{
+            cursor: pointer;
+        }
+      li:after{
+            content: '';
+            width:0%;
+            display: block;
+            background-color: #BB1500;
+            transition: 0.3s;
+          
+        }
+        .fourthsec h1{
+            color:white;
+        }
+         li:hover:after{
+            
+            width: 100%;
+        }
+        #three{
+            text-decoration: none;
+            border-radius: 8px;
+            background-color: #BB1500;
+            padding: 10px 10px;
+        }
+        .contentfooter{
+            margin:auto;
+            padding: 30px 0;
+        }
+        .leftcontent{
+          
+        }
+        /*
+
+        .mainnavlist{
+            display: flex;
+        }
+       */
+.mailform  input{
+            margin-top: 10px;;
+            width:300px;
+            padding:10px;
+        }
+        .leftcontent h2{
+           
+            color:white;
+
+        }
+        .rightcontent h2{
+            color:white;
+         
+        }
+        @media(max-width:700px){
+            .fa-bars{
+                display:block;
+                text-align: right;
+                position:absolute;
+            }
+            .cardg{
+                width:80px;
+
+            }
+          
+        }
+        .fa-bars{
+        display:none;
+        }
+        .cardtwo {
+
+            overflow: hidden;
+        }
+        .cardtwo img {
+            object-fit: cover;
+            transition: transform 0.8s;
+       
+        }
+        @media(max-width:700px){
+            .header{
+                display: none;
+            }
+
+                }        
+        .cardtwo:hover img{
+            transform: scale(1.2);
+        }
+        .a{
+            border:none;
+            outline:1px solid gray;
+            padding-top:15px;
+            padding-bottom:15px;
+        }
+        .footer{
+            margin:auto;
+            height:200px;
+        
+
+        }
+        .contentfooter{
+            display:flex;
+       
+padding: 30px;
+            justify-content: space-between;
+
+        }
+        .mailform input{
+            margin-top: 15px;
+        }
+        .footer .fa-brands{
+            margin-top: 15px;
+        }
+       .footer .fa-brands{
+            font-size:18px;
+        }
+        .contentcarder{
+            margin-top: 10px;
+            margin-left: 24px;;
+        }
+        .fifthsec{
+            background-color: #F8F9FA;
+        }
+        .cardg{
+            margin:15px;
+            background-color: white;
+            width:595px;
+            height:520px;
+        
+
+        }
+        .cardg p{
+            line-height: 1.3;
+            color:gray;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            
+        }
+        .readmore{
+            margin-top: 10px;
+            margin-left:24px;
+            color:red;
+            background-color: transparent;
+        }
+        .cardg img {
+            width:590px;
+        }
+        .cardotherrow{
+            display:flex;
+            padding: 40px 0;
+            justify-content: center;
+           
+        }
+        .viewbtncontainer{
+            position:relative;
+        }
+        .fifthsec{
+            margin:auto;
+            padding:50px 0;
+        }
+        .fifthsec h1{
+            text-align: center;
+            font-size:45px;
+
+
+        }
+        .fifthsec h3{
+            font-size:25px;
+            color:#007BFF;
+            text-align: center;
+        } 
+        .viewbtn{
+            background-color: white;
+            padding:15px 35px;
+          
+        
+          
+          
+
+        }
+        .title1{
+            text-align: left;
+        margin-top:12px;
+    margin-left:12px;
+}
+.cardtwo h5{
+    margin-top: 24px;;
+    margin-left: 24px;
+    font-size:18px;
+}
+    
+.rowsecond{
+            display:flex;
+            margin-left:60px;
+            margin-right:60px;
+            padding:20px 0;
+            margin: right 60px;
+            justify-content:center;
+
+        }
+        @media(max-width:700px){
+            .rowsecond{
+                display:grid;
+              grid-template-columns: repeat(2,2fr);
+            }
+
+            .cardtwo{
+                width:200px;
+            }
+            .cardtwo img {
+                width:200px;
+            }
+
+        }
+        .footer{
+            background-color: #0B0B1D;
+        }
+        .cardtwo{
+            background-color:white;
+            height:350px;
+            margin:10px;
+        }
+        .cardtwo h5{
+            color:black;
+        }
+        .titleteacher{
+            color:black;
+        }
+.containerbtn{
+    position: relative;
+}
+.fourthsec{
+    margin:auto;
+    padding:50px 0;
+    text-align:center;
+    color:white;
+    background-color:#2D3092;
+   
+}
+.fourthsec h1{
+    font-size:45px;
+    margin-top:5px;
+}
+.fourthsec h4{
+    font-size:25px;
+}
+.explorebtn:hover{
+    cursor: pointer;
+    background-color:#64676C;
+}
+        .explorebtn{
+            transition: 0.3s;
+            font-size: 18px;
+            transform: translatey(-40%);
+            justify-content:center;
+            align-items:center;
+           text-align: center;
+           left:44%;
+           border-radius: 8px;
+           padding:20px 30px;
+            position:absolute;
+        }
+        .titles{
+            color:black;
+        }
+        .row{
+            display:flex;
+            justify-content: center;
+            padding:30px 0;
+
+        }
+        .card{
+            margin:10px;
+            width:283px;
+            height:133px;
+
+            background-color: white;
+        }
+        .titles{
+            margin-top:24px;
+            margin-left:24px;
+        }
+        .card p{
+            margin-top:12px;
+            margin-left:24px;
+            font-size:18px;
+            color:gray;
+
+        }
+        .third{
+            background-color: #F8F9FA;
+        }
+        .third h1{
+            font-size:45px;
+        margin-top:10px;
+        }
+        .third{
+            margin:auto;
+
+            padding:40px 0;
+        }
+        .third h4{
+            font-size:25px;
+            text-align:center;
+            color:#007BFF;
+        }
+        .third h1{
+            text-align: center;
+
+        }
+        .content{
+            position:absolute;
+            left:50%;
+            top: 60%;
+            width:100%;
+            transform:translate(-50%,-50%);
+        }
+        /*
+        .containermenu{
+            height:60px;
+        }
+        */
+        .first{
+            background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("https://d33wubrfki0l68.cloudfront.net/e3677cf1a1edfe91ce34bd24485e768c43809fe7/af33b/bg_lzsokp_c_scale_w_1380.d859cf46.webp");
+background-size: cover;
+background-position: center;
+min-height:80vh;
+
+        }
+        .content h1{
+            text-align: center;
+            color:white;
+            font-size:45px;
+            
+        }
+        .content h2{
+            text-align: center;
+            color:silver;
+        font-size: 32px;    
+    margin-top:10px;
+    }
+        .a {
+            padding:6px 50px;
+            border-radius:16px;
+        }
+        
+        .contactinfo2 a{
+            font-size: 18px;
+            text-decoration: none;
+   
+            margin:4px;
+        }
+        .fa-brands{
+        color:white;
+        font-size:18px;
+        margin:8px;
+      
+        }
+        @media(max-width:700px){
+            .contactinfo2 a{
+                display:none;
+            }
+            
+            .navlinks{
+                display:none;
+            }
+           .a{
+                display:none;
+            }
+        }
+/*
+        .navlinks ul li {
+            display:inline-block;
+            text-align: left;
+
+            
+        }
+        nav{
+            display:flex;
+            justify-content: space-between;
+          
+            padding:1% 4%;
+        }
+        .navlinks ul li
+        {
+          
+        }
+        .fa i{
+         
+        }
+        .sociallinks{
+        background-color:#2D3092;
+        height:30px;
+        }
+        */
+        *{
+
+            margin:0px;
+            padding:0px;
+            font-family: 'apple',system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+        }
+        button{
+            background-color: #F4F4F4;
+            border:none;
+            padding:5px 5px;
+            border-radius:5px;
+        }
+       
+        /*
+        .containermenu{
+            background-color: white;
+        }
+        */
+        
+        </style>
+       <script src='https://d33wubrfki0l68.cloudfront.net/js/a457d04e6ed34527f1d30170e8f6a85304219e22/main.087fc6b8.js'></script>
+       <script>
+        AOS.init();
+      </script>
+    </body>
+</html>
